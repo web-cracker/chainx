@@ -89,10 +89,9 @@ Avalanche is at the core of our reward mechanism:
 ## 🔗 Links
 
 **GitHub Repository:**  
-https://github.com/yourusername/web3-avalanche-quiz
+https://github.com/webcracker/chainx
 
-**Live Demo:**  
-https://yourappdomain.com
+
 
 ---
 
