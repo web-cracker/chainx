@@ -18,7 +18,7 @@ bot.on('message', (msg) => {
 
 bot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
-    const url = 'https://c4188b888829.ngrok-free.app'; // Replace with your app's URL
+    const url = 'https://chainx-sandy.vercel.app/'; // Replace with your app's URL
     bot.sendMessage(chatId, "Click the button to open the app", {
         reply_markup: {
             inline_keyboard: [[{ text: "Open App", web_app: { url: url } }]]
