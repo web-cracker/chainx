@@ -1,0 +1,112 @@
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: #242424;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #333;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #e0e0e0;
+}
+
+.card p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+.category-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: #1e88e5;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #1565c0;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.spinner {
+    margin: 2rem auto;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid #1e88e5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.question-text {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 600px) {
+    .options-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Button styles for game state */
+button.selected { background-color: #ffa000; } /* Orange for selected */
+button.correct { background-color: #388e3c; } /* Green for correct */
+button.wrong { background-color: #d32f2f; }   /* Red for wrong */
+
+.result-text { 
+    margin-top: 1.5rem;
+    color: #ccc;
+    font-style: italic;
+}
+
+.play-again-btn {
+    margin-top: 1.5rem;
+    background-color: #388e3c;
+}
+
+.play-again-btn:hover {
+    background-color: #1b5e20;
+}

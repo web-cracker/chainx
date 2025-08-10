@@ -1,0 +1,228 @@
+/* src/components/ProfileModal.css */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px; /* Add padding to the overlay */
+}
+
+.modal {
+  background: #1c1c1e;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+  border: 1px solid #333;
+  text-align: center;
+  color: white;
+  position: relative;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .modal {
+    width: 100%; /* Take full width on small screens */
+    padding: 20px; /* Adjust padding for smaller screens */
+    border-radius: 0; /* Optional: remove border-radius on full width */
+  }
+
+  .overlay {
+    padding: 0; /* Remove padding from overlay when modal takes full width */
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.back-button {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: #007AFF;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.title {
+  color: #00E5FF;
+  margin-bottom: 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.points {
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.button {
+  background-color: #007AFF;
+  color: white;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 122, 255, 0.3);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 122, 255, 0.4);
+}
+
+.logout-button {
+  background-color: #FF3B30;
+  color: white;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 59, 48, 0.3);
+}
+
+.logout-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 59, 48, 0.4);
+}
+
+.conversion-section {
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.conversion-section .title {
+  color: white;
+}
+
+.conversion-section .subheadline {
+  color: #a0a0a0;
+}
+
+.input {
+  width: 100%;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background-color: #333;
+  color: white;
+}
+
+.convert-button {
+  background-color: #FF9500;
+  color: white;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 149, 0, 0.3);
+}
+
+.convert-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 149, 0, 0.4);
+}
+
+.close-button {
+  background-color: #333;
+  color: white;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(51, 51, 51, 0.3);
+}
+
+.close-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(51, 51, 51, 0.4);
+}
+
+/* Web3-like button colors */
+.button.primary {
+  background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+  box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4);
+}
+
+.button.primary:hover {
+  box-shadow: 0 6px 20px rgba(106, 17, 203, 0.6);
+}
+
+.button.secondary {
+  background: linear-gradient(45deg, #00c6ff 0%, #0072ff 100%);
+  box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
+}
+
+.button.secondary:hover {
+  box-shadow: 0 6px 20px rgba(0, 198, 255, 0.6);
+}
+
+.button.tertiary {
+  background: linear-gradient(45deg, #ff7e5f 0%, #feb47b 100%);
+  box-shadow: 0 4px 15px rgba(255, 126, 95, 0.4);
+}
+
+.button.tertiary:hover {
+  box-shadow: 0 6px 20px rgba(255, 126, 95, 0.6);
+}
+
+.button.destructive {
+  background: linear-gradient(45deg, #eb3349 0%, #f45c43 100%);
+  box-shadow: 0 4px 15px rgba(235, 51, 73, 0.4);
+}
+
+.button.destructive:hover {
+  box-shadow: 0 6px 20px rgba(235, 51, 73, 0.6);
+}

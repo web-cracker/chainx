@@ -1,0 +1,44 @@
+.leaderboard-card {
+    background-color: #242424;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #333;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    margin: 2rem auto;
+}
+
+.leaderboard-card h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #facc15; /* Yellow */
+}
+
+.leaderboard-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.leaderboard-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0.5rem;
+    border-bottom: 1px solid #333;
+    font-size: 1rem;
+}
+
+.leaderboard-list li:last-child {
+    border-bottom: none;
+}
+
+.leaderboard-list .player-name {
+    font-weight: 500;
+    color: #e0e0e0;
+}
+
+.leaderboard-list .player-coins {
+    font-weight: bold;
+    color: #facc15;
+}
