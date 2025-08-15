@@ -6,7 +6,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 
 // WARNING: Storing API keys in client-side code is insecure.
 // Use environment variables in production.
-const GEMINI_API_KEY = process.env.REACT_APP_GEMINI_API_KEY || 'AIzaSyDbxrkNvJ_RxQ9gGquOxu4VRpk-VyO8S2U';
+const GEMINI_API_KEY = process.env.REACT_APP_GEMINI_API_KEY;
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 
 const Quiz = () => {
