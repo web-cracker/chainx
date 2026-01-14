@@ -86,7 +86,7 @@ Avalanche is at the core of our reward mechanism:
 
 ---
 
-## 🔗 Links
+## 🔗 Link
 
 **GitHub Repository:**  
 https://github.com/web-cracker/chainx
